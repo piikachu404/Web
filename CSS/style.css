@@ -1,0 +1,82 @@
+/*Start Variables*/
+
+/*End Variables*/
+
+/*Start Global Rules*/
+*{ 
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;/*Chrome Prefixes*/
+    -moz-box-sizing: border-box;/*Firefox Prefixes*/
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Media Queries For Responsive*/
+/*Small*/
+@media(min-width:768px){
+.container{
+    width: 750px;
+}
+}
+/*Medium*/
+@media(min-width:992px){
+.container{
+    width: 970px;
+}
+}
+/*Large*/
+@media(min-width:1200px){
+.container{
+    width: 1170px;
+}
+}
+/*End Global Rules*/
+
+/*Design Header*/
+.header{
+padding: 20px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.header .logo{
+    width: 60px;
+}
+.header .links{
+    position: relative;
+}
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .links .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: px; 
+}
+.header .links .icon span:first-child{    
+    width: 100%;  
+}
+.header .links .icon span:nth-child(2){      
+    width: 60%;  
+    transition: 0.3s ease;
+}
+.header .links .icon span:last-child{
+    width: 100%;      
+}
+.header .links .icon:hover span:nth-child(2){
+    width: 100%;
+}
+
+/*Design Header*/
